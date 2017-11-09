@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode006", "leetcode006\leetcode006.vcxproj", "{B878EAC0-4D03-4D02-80FC-9974DC96DB39}"
 EndProject
@@ -54,6 +54,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode049", "leetcode049\leetcode049.vcxproj", "{2C9B75C3-11D4-4CCE-AC47-50861D1B057F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode036", "leetcode036\leetcode036.vcxproj", "{5A5475F3-57D4-4336-9797-D3D20D489CEF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode021", "leetcode021\leetcode021.vcxproj", "{ABA0639A-2326-49C2-9BE5-443075471330}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode022", "leetcode022\leetcode022.vcxproj", "{1F440BE5-07D6-4654-814E-82CC8AC554FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,14 @@ Global
 		{5A5475F3-57D4-4336-9797-D3D20D489CEF}.Debug|x64.Build.0 = Debug|x64
 		{5A5475F3-57D4-4336-9797-D3D20D489CEF}.Release|x64.ActiveCfg = Release|x64
 		{5A5475F3-57D4-4336-9797-D3D20D489CEF}.Release|x64.Build.0 = Release|x64
+		{ABA0639A-2326-49C2-9BE5-443075471330}.Debug|x64.ActiveCfg = Debug|x64
+		{ABA0639A-2326-49C2-9BE5-443075471330}.Debug|x64.Build.0 = Debug|x64
+		{ABA0639A-2326-49C2-9BE5-443075471330}.Release|x64.ActiveCfg = Release|x64
+		{ABA0639A-2326-49C2-9BE5-443075471330}.Release|x64.Build.0 = Release|x64
+		{1F440BE5-07D6-4654-814E-82CC8AC554FE}.Debug|x64.ActiveCfg = Debug|x64
+		{1F440BE5-07D6-4654-814E-82CC8AC554FE}.Debug|x64.Build.0 = Debug|x64
+		{1F440BE5-07D6-4654-814E-82CC8AC554FE}.Release|x64.ActiveCfg = Release|x64
+		{1F440BE5-07D6-4654-814E-82CC8AC554FE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

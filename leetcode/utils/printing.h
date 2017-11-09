@@ -23,13 +23,13 @@ void print_vector(std::ostream& of, const std::vector<std::string>& v)
     of << "[";
     if (!v.empty())
     {
-        of << v[0];
+        of << "\n\t\"" << v[0] <<"\"";
         for (auto i = 1; i < v.size(); ++i)
         {
-            of << ", " << v[i];
+            of << ",\n\t\"" << v[i] << "\"";
         }
     }
-    of << "]";
+    of << "\n]";
 }
 
 template<typename T>
