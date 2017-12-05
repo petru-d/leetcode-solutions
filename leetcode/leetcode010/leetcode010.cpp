@@ -21,7 +21,6 @@ namespace Solution
         char Letter;
     };
 
-
     // No checks.
     PatternToken GetPatternToken(const string& p, int start_index)
     {
@@ -36,7 +35,7 @@ namespace Solution
         return { PatternType::LetterStar, p[start_index] };
     }
 
-    bool isMatch(string s, int index_s, string p, int index_p)
+    bool isMatch_naive(string s, int index_s, string p, int index_p)
     {
         int S = int(s.size());
         int P = int(p.size());
@@ -51,7 +50,7 @@ namespace Solution
             auto token = GetPatternToken(p, index_p);
             if (token.Type == PatternType::Dot || token.Type == PatternType::Letter) return false;
 
-            return isMatch(s, index_s, p, 2 + index_p);
+            return isMatch_naive(s, index_s, p, 2 + index_p);
         }
 
         // the input is not done (see above), but the pattern is done - no match.
@@ -62,12 +61,12 @@ namespace Solution
         if (PatternType::Letter == token.Type)
         {
             // letter must match
-            return s[index_s] == token.Letter ? isMatch(s, 1 + index_s, p, 1 + index_p) : false;
+            return s[index_s] == token.Letter ? isMatch_naive(s, 1 + index_s, p, 1 + index_p) : false;
         }
 
         if (PatternType::Dot == token.Type)
         {
-            return isMatch(s, 1 + index_s, p, 1 + index_p);
+            return isMatch_naive(s, 1 + index_s, p, 1 + index_p);
         }
 
         // greedy first match
@@ -79,7 +78,7 @@ namespace Solution
 
             for (int i = pos_non_letter; i >= index_s; --i)
             {
-                if (isMatch(s, i, p, 2 + index_p)) return true;
+                if (isMatch_naive(s, i, p, 2 + index_p)) return true;
             }
 
             return false;
@@ -90,7 +89,7 @@ namespace Solution
         {
             for (int i = S; i >= index_s; --i)
             {
-                if (isMatch(s, i, p, 2 + index_p)) return true;
+                if (isMatch_naive(s, i, p, 2 + index_p)) return true;
             }
 
             return false;
@@ -100,23 +99,29 @@ namespace Solution
         return false;
     }
 
+    //dissapointing naive solution :(
+    bool isMatch_naive(string s, string p)
+    {
+        return isMatch_naive(s, 0, p, 0);
+    }
+
     bool isMatch(string s, string p)
     {
-        return isMatch(s, 0, p, 0);
+        
     }
 }
 
 int main()
 {
-    cout << Solution::isMatch("aa", "a") << "\n";
-    cout << Solution::isMatch("aa", "aa") << "\n";
-    cout << Solution::isMatch("aaa", "aa") << "\n";
-    cout << Solution::isMatch("aa", "a*") << "\n";
-    cout << Solution::isMatch("aa", ".*") << "\n";
-    cout << Solution::isMatch("ab", ".*") << "\n";
-    cout << Solution::isMatch("aab", "c*a*b") << "\n";
-    cout << Solution::isMatch("a", "ab*") << "\n";
-    cout << Solution::isMatch("acaabbaccbbacaabbbb", "a*.*b*.*a*aa*a*") << "\n";
+    cout << Solution::isMatch_naive("aa", "a") << "\n";
+    cout << Solution::isMatch_naive("aa", "aa") << "\n";
+    cout << Solution::isMatch_naive("aaa", "aa") << "\n";
+    cout << Solution::isMatch_naive("aa", "a*") << "\n";
+    cout << Solution::isMatch_naive("aa", ".*") << "\n";
+    cout << Solution::isMatch_naive("ab", ".*") << "\n";
+    cout << Solution::isMatch_naive("aab", "c*a*b") << "\n";
+    cout << Solution::isMatch_naive("a", "ab*") << "\n";
+    cout << Solution::isMatch_naive("acaabbaccbbacaabbbb", "a*.*b*.*a*aa*a*") << "\n";
     return 0;
 }
 
