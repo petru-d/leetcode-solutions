@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode033", "leetcode033\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode053", "leetcode053\leetcode053.vcxproj", "{AB206A5A-038D-4A4A-9BA1-F05362CA425A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode037", "leetcode037\leetcode037.vcxproj", "{4CDBF084-2BBE-412A-8F7D-8E14D17935A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -279,6 +281,10 @@ Global
 		{AB206A5A-038D-4A4A-9BA1-F05362CA425A}.Debug|x64.Build.0 = Debug|x64
 		{AB206A5A-038D-4A4A-9BA1-F05362CA425A}.Release|x64.ActiveCfg = Release|x64
 		{AB206A5A-038D-4A4A-9BA1-F05362CA425A}.Release|x64.Build.0 = Release|x64
+		{4CDBF084-2BBE-412A-8F7D-8E14D17935A0}.Debug|x64.ActiveCfg = Debug|x64
+		{4CDBF084-2BBE-412A-8F7D-8E14D17935A0}.Debug|x64.Build.0 = Debug|x64
+		{4CDBF084-2BBE-412A-8F7D-8E14D17935A0}.Release|x64.ActiveCfg = Release|x64
+		{4CDBF084-2BBE-412A-8F7D-8E14D17935A0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
