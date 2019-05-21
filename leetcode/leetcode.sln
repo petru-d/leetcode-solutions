@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode006", "leetcode006\leetcode006.vcxproj", "{B878EAC0-4D03-4D02-80FC-9974DC96DB39}"
 EndProject
@@ -100,6 +100,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode041", "leetcode041\leetcode041.vcxproj", "{B8C7F356-E73F-485B-B41A-D3C483A8E3DA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode042", "leetcode042\leetcode042.vcxproj", "{32314A0C-FFF8-4BB2-AD08-1DE35B87C148}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode058", "leetcode058\leetcode058.vcxproj", "{8500FB14-C7DB-43F0-877E-9DE51A5E2864}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -303,6 +305,10 @@ Global
 		{32314A0C-FFF8-4BB2-AD08-1DE35B87C148}.Debug|x64.Build.0 = Debug|x64
 		{32314A0C-FFF8-4BB2-AD08-1DE35B87C148}.Release|x64.ActiveCfg = Release|x64
 		{32314A0C-FFF8-4BB2-AD08-1DE35B87C148}.Release|x64.Build.0 = Release|x64
+		{8500FB14-C7DB-43F0-877E-9DE51A5E2864}.Debug|x64.ActiveCfg = Debug|x64
+		{8500FB14-C7DB-43F0-877E-9DE51A5E2864}.Debug|x64.Build.0 = Debug|x64
+		{8500FB14-C7DB-43F0-877E-9DE51A5E2864}.Release|x64.ActiveCfg = Release|x64
+		{8500FB14-C7DB-43F0-877E-9DE51A5E2864}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
