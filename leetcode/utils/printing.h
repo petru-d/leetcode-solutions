@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <bitset>
-
+#include <iostream>
 template<typename T>
 void print_vector(std::ostream& of, const std::vector<T>& v)
 {
