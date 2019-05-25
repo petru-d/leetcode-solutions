@@ -1,10 +1,11 @@
 #pragma once
-#include <vector>
-#include <string>
 #include <bitset>
 #include <iostream>
-template<typename T>
-void print_vector(std::ostream& of, const std::vector<T>& v)
+#include <optional>
+#include <string>
+#include <vector>
+
+template <typename T> void print_vector(std::ostream& of, const std::vector<T>& v)
 {
     of << "[";
     if (!v.empty())
@@ -23,7 +24,7 @@ inline void print_vector(std::ostream& of, const std::vector<std::string>& v)
     of << "[";
     if (!v.empty())
     {
-        of << "\n\t\"" << v[0] <<"\"";
+        of << "\n\t\"" << v[0] << "\"";
         for (auto i = 1; i < v.size(); ++i)
         {
             of << ",\n\t\"" << v[i] << "\"";
@@ -32,8 +33,7 @@ inline void print_vector(std::ostream& of, const std::vector<std::string>& v)
     of << "\n]";
 }
 
-template<typename T>
-void print_vector_vector(std::ostream& of, const std::vector<std::vector<T>>& vv)
+template <typename T> void print_vector_vector(std::ostream& of, const std::vector<std::vector<T>>& vv)
 {
     of << "[";
     if (!vv.empty())
@@ -49,8 +49,7 @@ void print_vector_vector(std::ostream& of, const std::vector<std::vector<T>>& vv
     of << "\n]";
 }
 
-template<int N, int B>
-void print_array(std::ostream& of, std::bitset<B> data[N])
+template <int N, int B> void print_array(std::ostream& of, std::bitset<B> data[N])
 {
     of << "[";
     if (N != 0)
@@ -64,8 +63,7 @@ void print_array(std::ostream& of, std::bitset<B> data[N])
     of << "]";
 }
 
-template<typename T, int N>
-void print_array(std::ostream& of, T data[N])
+template <typename T, int N> void print_array(std::ostream& of, T data[N])
 {
     of << "[";
     if (N != 0)
@@ -79,8 +77,7 @@ void print_array(std::ostream& of, T data[N])
     of << "]";
 }
 
-template<typename T, int L, int C>
-void print_array_array(std::ostream& of, T data[L][C])
+template <typename T, int L, int C> void print_array_array(std::ostream& of, T data[L][C])
 {
     of << "[";
     if (0 != L)
@@ -97,8 +94,7 @@ void print_array_array(std::ostream& of, T data[L][C])
     of << "\n]";
 }
 
-template<typename T>
-void print_linked_list(std::ostream& of, const T* head)
+template <typename T> void print_linked_list(std::ostream& of, const T* head)
 {
     of << "[";
     if (nullptr != head)
@@ -113,4 +109,12 @@ void print_linked_list(std::ostream& of, const T* head)
         }
     }
     of << "]";
+}
+
+template <typename T> void print_optional(std::ostream& of, std::optional<T> opt)
+{
+    if (opt)
+        of << opt.value();
+    else
+        of << "[]";
 }
